@@ -2,6 +2,12 @@
   "name": "debate-app-fe",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=14.0.0",
+    "pnpm": ">=7.0.0",
+    "yarn": "please use pnpm",
+    "npm": "please use pnpm"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
