@@ -1,3 +1,13 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next", // add extra linting
+    "next/core-web-vitals",
+    "eslint:recommended" // add extra linting
+  ],
+  "globals": { 
+    "React": "readonly" // React doesn't need to be imported into a Next project, but if it's ever there, don't warn about it
+  },
+  "rules": { // turn on and off linting rules 
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }] //specialized rule that prefixes used vars with ^_
+  }
 }
