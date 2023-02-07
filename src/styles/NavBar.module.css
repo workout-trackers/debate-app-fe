@@ -1,0 +1,8 @@
+.navbarButton {
+  background-color: red;
+  border: 0;
+}
+
+.navOpen {
+  display: none;
+}
