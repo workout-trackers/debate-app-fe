@@ -1,0 +1,32 @@
+.infoButton {
+  height: 3.5rem;
+  width: 3.5rem;
+  color: #ffffff;
+  font-size: 2rem;
+  border: 0.5rem solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0, 2px, 10px, 0 rgba(0, 0, 0, 0.3);
+  align-self: flex-end;
+}
+
+.infoButton:hover {
+  color: #08f7fe;
+  border: 0.5rem solid #08f7fe;
+}
+
+.infoSection {
+  position: absolute;
+  transform: translate(55vw, 57vh);
+  width: 35vw;
+  height: 25vh;
+  border-top: 0.5rem solid #08f7fe;
+  border-left: 0.5rem solid #08f7fe;
+  border-radius: 30px;
+  padding: 0 15px 15px;
+  font-weight: 600;
+  font-size: medium;
+}
+
+.hidden {
+  display: none;
+}
