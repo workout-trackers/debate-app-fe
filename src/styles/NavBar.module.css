@@ -1,8 +1,135 @@
-.navbarButton {
-  background-color: red;
-  border: 0;
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: absolute;
 }
 
-.navOpen {
-  display: none;
+.navbarButton {
+  width: 50px;
+  height: 7vh;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.lineOne,
+.lineThree {
+  height: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+  background-color: #080808;
+  box-shadow: 0, 2px, 10px, 0 rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.lineOne {
+  margin: 0px 0px 14px 0px;
+  animation: animate-line-1-rev 0.7s var(--cubic-bezier-out) ease-in-out;
+}
+
+.lineOne.active,
+.lineThree.active {
+  background-color: #080808;
+}
+
+.navbarButton:hover .lineOne.active,
+.navbarButton:hover .lineOne,
+.navbarButton:hover .lineThree.active,
+.navbarButton:hover .lineThree {
+  background-color: #ff466d;
+}
+
+.lineThree {
+  margin: 14px 0px 0px 0px;
+  animation: animate-line-3-rev 0.7s var(--cubic-bezier-out) ease-in-out;
+}
+
+.lineOne.active {
+  animation: animate-line-1 0.7s var(--cubic-bezier-in) forwards;
+}
+
+.lineTwo.active {
+  height: 8px;
+}
+
+.lineThree.active {
+  animation: animate-line-3 0.7s var(--cubic-bezier-in) forwards;
+}
+
+.no-animation {
+  -webkit-animation: none !important;
+  animation: none !important;
+}
+
+@keyframes animate-line-1 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, 22px, 0) rotate(0);
+  }
+  100% {
+    transform: translate3d(0, 22px, 0) rotate(45deg);
+  }
+}
+
+@keyframes animate-line-3 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -22px, 0) rotate(0);
+  }
+  100% {
+    transform: translate3d(0, -22px, 0) rotate(135deg);
+  }
+}
+
+@keyframes animate-line-1-rev {
+  0% {
+    transform: translate3d(0, 22px, 0) rotate(45deg);
+  }
+  50% {
+    transform: translate3d(0, 22px, 0) rotate(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+
+@keyframes animate-line-3-rev {
+  0% {
+    transform: translate3d(0, -22px, 0) rotate(135deg);
+  }
+  50% {
+    transform: translate3d(0, -22px, 0) rotate(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+
+.navbarList {
+  list-style-type: none;
+  font-size: 2rem;
+  color: #080808;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 1rem 0 0 0;
+  padding: 0 0 0 1rem;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.7s ease;
+}
+
+.navbarListVisible {
+  transform: scaleY(1);
+}
+
+.navbarListItem {
+  margin: 0 0 1rem 0;
+}
+
+.navbarListItem:hover {
+  color: #ff466d;
+  cursor: pointer;
 }
