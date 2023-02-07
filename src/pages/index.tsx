@@ -9,7 +9,7 @@ import users from '../data/users.json';
 
 export default function Home() {
   const [user, setUser] = useState(users[0]);
-  
+
   return (
     <>
       <Head>
