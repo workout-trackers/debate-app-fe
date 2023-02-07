@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 import styles from '@/styles/InfoSection.module.css';
 
 export default function InfoSection() {
@@ -6,7 +6,9 @@ export default function InfoSection() {
 
   return (
     <>
-      <article className={`${styles.infoSection} ${infoOpen ? null : 'hidden'}`}>
+      <article
+        className={`${styles.infoSection} ${infoOpen ? null : 'hidden'}`}
+      >
         <p>
           This app helps facilitate debates by allowing you to create and view
           boards around a central topic as well as sub-topics.
@@ -16,9 +18,14 @@ export default function InfoSection() {
           agruments and references for each sub-topic
         </p>
       </article>
-      <button className={styles.infoButton} onClick={() => {infoOpen ? setInfoOpen(false) : setInfoOpen(true)}}>
+      <button
+        className={styles.infoButton}
+        onClick={() => {
+          infoOpen ? setInfoOpen(false) : setInfoOpen(true);
+        }}
+      >
         i
       </button>
     </>
-  )
+  );
 }

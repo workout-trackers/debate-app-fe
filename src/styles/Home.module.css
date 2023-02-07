@@ -11,7 +11,7 @@
   position: relative;
 }
 
-.login--section {
+.loginSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,26 +32,27 @@
   box-shadow: 0, 2px, 10px, 0 rgba(0, 0, 0, 0.3);
 }
 
-.ball-one {
+.ballOne {
   color: #ff466d;
+  background: #ffffff;
   transform: translate(5rem, 4rem);
 }
 
-.signup--button--text,
-.login--button--text {
+.signupButtonText,
+.loginButtonText {
   position: relative;
 }
 
-.signup--button--text::before {
+.signupButtonText::before {
   background-color: #08f7fe;
 }
 
-.login--button--text::before {
+.loginButtonText::before {
   background-color: #ff466d;
 }
 
-.signup--button--text::before,
-.login--button--text::before {
+.signupButtonText::before,
+.loginButtonText::before {
   content: '';
   position: absolute;
   display: block;
@@ -64,32 +65,34 @@
   transition: transform 0.3s ease;
 }
 
-.ball-one:hover .signup--button--text::before,
-.ball-three:hover .login--button--text::before {
+.ballOne:hover .signupButtonText::before,
+.ballThree:hover .loginButtonText::before {
   transform: scaleX(1);
 }
 
-.ball-two {
+.ballTwo {
   color: #ffffff;
+  background: #724cdd;
   transform: translate(-3vw, 0vh);
   z-index: 1;
 }
 
-.ball-two::before {
+.ballTwo::before {
   content: '0101010';
   color: #08f7fe;
   position: absolute;
   transform: translate(0.5rem, -1rem);
 }
 
-.ball-two::after {
+.ballTwo::after {
   content: '0101010';
   color: #ff466d;
   position: absolute;
   transform: translate(-8.5rem, 1rem);
 }
 
-.ball-three {
+.ballThree {
   color: #08f7fe;
+  background: #080808;
   transform: translate(-6.7rem, -3.5rem);
 }

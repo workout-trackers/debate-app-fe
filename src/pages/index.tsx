@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import NavBar from '@/components/NavBar';
+import InfoSection from '@/components/InfoSection';
 import styles from '@/styles/Home.module.css';
 
 import { User } from '@/interfaces';
@@ -20,7 +21,57 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <NavBar user={user} />
+        <section className={styles.loginSection}>
+          <button className={`${styles.ball} ${styles.ballOne}`}>
+            <span className={styles.signupButtonText}>Signup</span>
+          </button>
+          <button className={`${styles.ball} ${styles.ballTwo}`}>
+            0101010
+          </button>
+          <button className={`${styles.ball} ${styles.ballThree}`}>
+            <span className={styles.loginButtonText}>Login</span>
+          </button>
+        </section>
+        <InfoSection />
       </main>
     </>
   );
+}
+
+{
+  /* <main>
+<nav>
+  <button className="menu-icon" onClick={() => handleClick()}>
+    <div className="line line-1 no-animation"></div>
+    <div className="line line-2 no-animation"></div>
+    <div className="line line-3 no-animation"></div>
+  </button>
+  <ul className="ul-hidden">
+    <li>About</li>
+    <li>All Boards</li>
+  </ul>
+</nav>
+<section className="login--section">
+  <button className="ball ball-one white">
+    <span className="signup--button--text">Signup</span>
+  </button>
+  <button className="ball ball-two purple">0101010</button>
+  <button className="ball ball-three black">
+    <span className="login--button--text">Login</span>
+  </button>
+</section>
+<article className="info--section hidden">
+  <p>
+    This app helps facilitate debates by allowing you to create and view
+    boards around a central topic as well as sub-topics.
+  </p>
+  <p>
+    Each side of the debate is able to state their position and provide
+    agruments and references for each sub-topic
+  </p>
+</article>
+<button className="info--button" onClick={() => handleAboutClick()}>
+  i
+</button>
+</main> */
 }
