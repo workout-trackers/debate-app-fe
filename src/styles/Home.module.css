@@ -21,15 +21,17 @@
 }
 
 .ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 150px;
   width: 150px;
   font-style: oblique;
   font-weight: bold;
   font-size: 2rem;
-  border: 0px;
+  text-decoration: none;
   border-radius: 50%;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  box-shadow: 0, 2px, 10px, 0 rgba(0, 0, 0, 0.3);
 }
 
 .ballOne {
@@ -88,7 +90,7 @@
   content: '0101010';
   color: #ff466d;
   position: absolute;
-  transform: translate(-8.5rem, 1rem);
+  transform: translate(-0.5rem, 1rem);
 }
 
 .ballThree {
