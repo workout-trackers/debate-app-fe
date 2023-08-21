@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "debateId": 1,
+    "title": "composition"
+  },
+  {
+    "id": 2,
+    "debateId": 1,
+    "title": "flavor"
+  },
+  {
+    "id": 3,
+    "debateId": 1,
+    "title": "nutrition"
+  }
+]
