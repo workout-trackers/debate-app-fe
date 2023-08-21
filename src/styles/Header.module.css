@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.headerText {
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0;
+  color: #724cdd;
+}
