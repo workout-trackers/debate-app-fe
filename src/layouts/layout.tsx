@@ -1,9 +1,9 @@
-import Header from "@/components/Header";
-import NavBar from "@/components/NavBar";
-import UserSection from "@/components/UserSection";
-import InfoSection from "@/components/InfoSection";
+import Header from '@/components/Header';
+import NavBar from '@/components/NavBar';
+import UserSection from '@/components/UserSection';
+import InfoSection from '@/components/InfoSection';
 import { ReactNode } from 'react';
-import { User } from "@/interfaces";
+import { User } from '@/interfaces';
 
 interface LayoutProps {
   user?: User;
@@ -15,12 +15,8 @@ export default function Layout({ user, children }: LayoutProps) {
     <main className="main">
       <Header />
       <NavBar user={user} />
-      { children }
-      { 
-        user
-        ? <UserSection />
-        : <InfoSection />
-      }
+      {children}
+      {user ? <UserSection /> : <InfoSection />}
     </main>
   );
 }
