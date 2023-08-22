@@ -2,11 +2,11 @@
   {
     "id": 1,
     "userId": 1,
-    "debateId": 1
+    "topicId": 1
   },
   {
     "id": 2,
     "userId": 2,
-    "debateId": 1
+    "topicId": 1
   }
 ]

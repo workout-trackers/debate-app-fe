@@ -2,14 +2,14 @@
   {
     "id": 1,
     "userId": 1,
-    "topicId": 2,
+    "categoryId": 2,
     "point": "hotdogs taste like straight ass",
     "reference": "https://becauseisaidso.com"
   },
   {
     "id": 2,
     "userId": 2,
-    "topicId": 2,
+    "categoryId": 2,
     "point": "hotdogs taste like straight ass, and I like eating ass",
     "reference": "ask your mom"
   }
