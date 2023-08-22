@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "topicId": 1,
+    "position": "yes"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "topicId": 1,
+    "position": "no"
+  }
+]

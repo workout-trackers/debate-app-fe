@@ -1,0 +1,41 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 80vh;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.topic {
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem;
+  background: #724cdd;
+}
+
+.userBoardBall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 50%;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.userA {
+  color: #ff466d;
+  background: #ffffff;
+  transform: translate(5rem, 4rem);
+}
+
+.userB {
+  color: #08f7fe;
+  background: #080808;
+  transform: translate(-6.7rem, -3.5rem);
+}
