@@ -1,18 +1,8 @@
-.board {
+.boardPage {
   display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   min-height: 80vh;
-  width: 70vw;
   margin: 0 auto;
-}
-
-.topic {
-  border-radius: 1rem;
-  text-align: center;
-  padding: 1rem;
-  background: #724cdd;
 }
 
 .userBoardBall {
@@ -29,13 +19,21 @@
 }
 
 .userA {
-  color: #ff466d;
-  background: #ffffff;
-  transform: translate(5rem, 4rem);
+  color: #08f7fe;
+  background: #080808;
+  align-self: self-end;
 }
 
 .userB {
-  color: #08f7fe;
-  background: #080808;
-  transform: translate(-6.7rem, -3.5rem);
+  color: #ff466d;
+  background: #ffffff;
+  align-self: self-start;
+}
+
+.topic {
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  background: #724cdd;
 }
