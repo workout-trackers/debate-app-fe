@@ -32,9 +32,17 @@ export default function NavBar({ user }: NavBarProps) {
           navOpen ? styles.navbarListVisible : null
         }`}
       >
-        <Link href="/about" className={styles.navbarListItem}><li>About</li></Link>
-        <Link href="/boards" className={styles.navbarListItem}><li>All Boards</li></Link>
-        {user ? <Link href="/userboards" className={styles.navbarListItem}><li>Your Boards</li></Link> : null}
+        <Link href="/about" className={styles.navbarListItem}>
+          <li>About</li>
+        </Link>
+        <Link href="/boards" className={styles.navbarListItem}>
+          <li>All Boards</li>
+        </Link>
+        {user ? (
+          <Link href="/userboards" className={styles.navbarListItem}>
+            <li>Your Boards</li>
+          </Link>
+        ) : null}
       </ul>
     </nav>
   );
