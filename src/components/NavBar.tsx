@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import styles from '@/styles/NavBar.module.css';
+
 import { User } from '@/interfaces';
 
 interface NavBarProps {
@@ -30,9 +32,9 @@ export default function NavBar({ user }: NavBarProps) {
           navOpen ? styles.navbarListVisible : null
         }`}
       >
-        <li className={styles.navbarListItem}>About</li>
-        <li className={styles.navbarListItem}>All Boards</li>
-        {user ? <li className={styles.navbarListItem}>Your Boards</li> : null}
+        <Link href="/about" className={styles.navbarListItem}><li>About</li></Link>
+        <Link href="/boards" className={styles.navbarListItem}><li>All Boards</li></Link>
+        {user ? <Link href="/userboards" className={styles.navbarListItem}><li>Your Boards</li></Link> : null}
       </ul>
     </nav>
   );
