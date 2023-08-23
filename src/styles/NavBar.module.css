@@ -126,6 +126,8 @@
 }
 
 .navbarListItem {
+  text-decoration: none;
+  color: inherit;
   margin: 0 0 1rem 0;
 }
 

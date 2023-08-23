@@ -8,7 +8,7 @@ import topics from '../../data/topics.json';
 import usersTopics from '../../data/usersTopics.json';
 import categories from '../../data/categories.json';
 
-export default function Board() {
+export default function BoardPage() {
   return (
     <Layout user={users[0]}>
       <section className={styles.boardPage}>

@@ -1,6 +1,7 @@
 ## Getting Started
 
-Clone down 
+Clone down
+
 ```bash
 pnpm install
 pnpm dev
