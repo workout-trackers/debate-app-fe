@@ -1,0 +1,9 @@
+.category {
+  font-size: 1.5rem;
+  width: 50%; 
+  margin: 0 auto;
+  text-align: center;
+  background-color: #724cdd;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
