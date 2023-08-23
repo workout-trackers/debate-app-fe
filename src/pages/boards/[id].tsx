@@ -12,7 +12,7 @@ export default function Board() {
   return (
     <Layout user={users[0]}>
       <section className={styles.boardPage}>
-      <article className={`${styles.userBoardBall} ${styles.userA}`}>
+        <article className={`${styles.userBoardBall} ${styles.userA}`}>
           <h4>{usersTopics[0].position.toUpperCase()}</h4>
         </article>
         <section className={styles.board}>
@@ -20,7 +20,9 @@ export default function Board() {
             <h2>{topics[0].title}</h2>
             <p>{topics[0].description}</p>
           </section>
-          {categories.map((category) => <Category key={category.id} category={category} />)}
+          {categories.map((category) => (
+            <Category key={category.id} category={category} />
+          ))}
         </section>
         <article className={`${styles.userBoardBall} ${styles.userB}`}>
           <h4>{usersTopics[1].position.toUpperCase()}</h4>
