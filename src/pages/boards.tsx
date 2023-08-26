@@ -11,9 +11,11 @@ export default function BoardsPage() {
     <Layout user={users[0]}>
       <section className={styles.boardsPage}>
         <h2>All Boards</h2>
-        {topics.map((topic) => (
-          <TopicCard key={topic.id} topic={topic} />
-        ))}
+        <section className={styles.boardsContainer}>
+          {topics.map((topic) => (
+            <TopicCard key={topic.id} topic={topic} />
+          ))}
+        </section>
       </section>
     </Layout>
   );

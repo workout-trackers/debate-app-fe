@@ -1,3 +1,8 @@
 .boardsPage {
   min-height: 80vh;
 }
+
+.boardsContainer {
+  width: 90%;
+  margin: 0 auto;
+}
