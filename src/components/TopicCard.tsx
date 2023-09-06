@@ -7,7 +7,7 @@ interface TopicCardProps {
   topic: Topic;
 }
 
-export default function TopicCard({ topic }: TopicCardProps ) {
+export default function TopicCard({ topic }: TopicCardProps) {
   return (
     <Link href={`/boards/${topic.id}`} key={topic.id}>
       <section className={styles.topicCard}>
