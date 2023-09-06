@@ -8,5 +8,5 @@ export interface UsersSliceState extends Array<User> {}
 export const usersSlice = createSlice({
   name: 'users',
   initialState: users,
-  reducers: {}
+  reducers: {},
 });

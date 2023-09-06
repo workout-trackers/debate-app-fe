@@ -9,7 +9,7 @@ interface TopicCardProps {
 
 export default function TopicCard({ topic }: TopicCardProps) {
   return (
-    <Link href={`/boards/${topic.id}`} key={topic.id}>
+    <Link href={`/boards/${topic.id}`}>
       <section className={styles.topicCard}>
         <h3>{topic.title}</h3>
       </section>
