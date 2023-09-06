@@ -1,17 +1,11 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
-import NavBar from '@/components/NavBar';
+import NavBar from '@/components/NavBar/NavBar';
 import InfoSection from '@/components/InfoSection';
 import styles from '@/styles/Home.module.css';
 
-import { User } from '@/interfaces';
-
-import users from '../data/users.json';
-
 export default function Home() {
-  const [user, setUser] = useState<User>(users[0]);
-
   return (
     <>
       <Head>
@@ -21,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="main">
-        <NavBar user={user} />
+        <NavBar />
         <section className={styles.loginSection}>
           <Link href="/signup" className={`${styles.ball} ${styles.ballOne}`}>
             <span className={styles.signupButtonText}>Signup</span>

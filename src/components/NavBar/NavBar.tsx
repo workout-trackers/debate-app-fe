@@ -1,14 +1,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import styles from '@/styles/NavBar.module.css';
+import { useSelector } from '@/lib/redux';
+import styles from './NavBar.module.css';
 
-import { User } from '@/interfaces';
-
-interface NavBarProps {
-  user?: User;
-}
-
-export default function NavBar({ user }: NavBarProps) {
+export default function NavBar() {
+  const user = useSelector((state) => state.users[0]);
   const [navOpen, setNavOpen] = useState(false);
 
   return (

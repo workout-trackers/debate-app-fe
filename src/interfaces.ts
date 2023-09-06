@@ -3,3 +3,9 @@ export interface User {
   name: String;
   email: String;
 }
+
+export interface Topic {
+  id: Number;
+  title: String;
+  description: String;
+}
